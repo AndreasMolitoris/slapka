@@ -428,36 +428,4 @@ h3 {
     }
   }
   
-  /* responzivní design pro šířky obrazovek větší než 900px */
-  @media screen and (min-width: 901px) {
-    /* vrácení vlastností pro navigaci */
-    nav {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    /* vrácení vlastností pro top-container */
-    .top-container {
-      flex-direction: row;
-      align-items: flex-start;
-    }
-    
-    /* zobrazení skrytých položek menu */
-    .top-menu a:nth-child(6),
-    .top-menu a.disabled {
-      display: inline-block;
-    }
-    
-    /* vrácení původní výšky a odsazení headeru */
-    header {
-      height: 300px;
-      margin-top: 80px;
-    }
-    
-    /* vrácení původní výšky a odsazení hlavního obrázku */
-    .picture {
-      height: 200px;
-      margin-top: 40px;
-    }
-}
+ 
