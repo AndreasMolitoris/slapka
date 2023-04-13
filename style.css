@@ -26,6 +26,7 @@ nav {
 
 main {
     background-color: #96A61B;
+    min-height: 350px
 }
 
 footer {
@@ -42,14 +43,14 @@ footer {
 }
 
 .logo {
-    width: 200px;
+    width: 150px;
     margin: auto;
 }
 
 .top-menu {
     margin:auto;
     font-size: 20px;
-    font-weight: 700;
+    
     align-items: center;
     
     
@@ -82,6 +83,7 @@ a :hover {
     margin:auto;
     padding-top: 30px;
     text-align: center;
+    
     
  
  
@@ -160,7 +162,7 @@ h2 {
  }
 
 .active {
-    font-size: 30px;
+    font-weight: 700;
 }
 
 .disabled {
@@ -229,4 +231,16 @@ h3 {
     font-size: 20px;
     font-style: italic;
     
+}
+
+#countdown {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+  }
+
+  #countdown span {
+    color: orange;
 }

@@ -10,9 +10,32 @@
 </head>
 <body>
     <nav>
+        <div id="countdown"></div>
+        <script>
+            var countDownDate = new Date("May 20, 2023 14:00:00").getTime();
+            var x = setInterval(function() {
+              var now = new Date().getTime();
+              var distance = countDownDate - now;
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "<span>00d</span> <span>00h</span> <span>00m</span> <span>00s</span>";
+              } else {
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById("countdown").innerHTML = "Do startu zbývá:  <span>" + 
+                (days.toString().padStart(2, '0')) + "d</span> <span>" + 
+                (hours.toString().padStart(2, '0')) + "h</span> <span>" + 
+                (minutes.toString().padStart(2, '0')) + "m</span> <span>" + 
+                (seconds.toString().padStart(2, '0')) + "s</span>";
+              }
+            }, 1000);
+          </script>
+        
         <div class="top-container">
             <div class="logo">
-                <img class="logo" src="img/image_w.png" alt="Chotucká šlapka logo">
+                <a href="index.html"><img class="logo" src="img/image_w.png" alt="Chotucká šlapka logo"></a>
             </div>
             <div class="top-menu">
                 <a href="index.html">O běhu</a>
@@ -25,4 +48,34 @@
             </div>    
         </div>
     </nav>
+    <header>
+        <div class="picture">
+        <img class="main-picture" src="img/DSC07041.JPG" alt="Banner s názvem závodu">
+        </div>
+    </header>
+    <main>
+        <div class="kontakt">
+        <a href="img/Vysledky 2014.pdf" target="_blank">Výsledky 2014 (.pdf)</a>
+        
+        </div>
+    
+</main>
+<footer>
+    <div class="odkazy">
+        <div class="f1">
+            <ul>
+                <li><a href="https://www.behej.com/zavod/40870" target="_blank">behej.com</a></li>
+                <li><a href="https://www.svetbehu.cz/terminovka/chotucka-slapka/" target="_blank">svetbehu.cz</a></li>
+                <li><a href="https://ceskybeh.cz/zavody/chotucka-slapka-2023/" target="_blank">ceskybeh.cz</a></li>
+            </ul>
+        </div>
+        <div class="f2">
+                <a href="http://www.krinec.cz/" target="_blank"><img src="img/znak.png" alt="Znak městyse Křinec"></a>
+        </div>
+        <div class="f3">
+            <a href="https://www.facebook.com/chotuckaslapka" target="_blank"><img class="icons" src="img/facebook_w.png" alt="Logo Facebook"></a>
+            <a href="mailto:andreas.molitoris@gmail.com"><img class="icons" src="img/email_w.png" alt="Logo E-mail"></a>
+        </div>
+    </div>
+</footer>
 </body>

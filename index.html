@@ -10,9 +10,33 @@
 </head>
 <body>
     <nav>
+        <div id="countdown"></div>
+        <script>
+            var countDownDate = new Date("May 20, 2023 14:00:00").getTime();
+            var x = setInterval(function() {
+              var now = new Date().getTime();
+              var distance = countDownDate - now;
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "<span>00d</span> <span>00h</span> <span>00m</span> <span>00s</span>";
+              } else {
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById("countdown").innerHTML = "Do startu zbývá:  <span>" + 
+                (days.toString().padStart(2, '0')) + "d</span> <span>" + 
+                (hours.toString().padStart(2, '0')) + "h</span> <span>" + 
+                (minutes.toString().padStart(2, '0')) + "m</span> <span>" + 
+                (seconds.toString().padStart(2, '0')) + "s</span>";
+              }
+            }, 1000);
+          </script>
+        
         <div class="top-container">
+            
             <div class="logo">
-                <img class="logo" src="img/image_w.png" alt="Chotucká šlapka logo">
+                <a href="index.html"><img class="logo" src="img/image_w.png" alt="Chotucká šlapka logo"></a>
             </div>
             <div class="top-menu">
                 <a class="active" href="index.html">O běhu</a>
@@ -23,12 +47,14 @@
                 <a class="disabled" href="#">Fotogalerie</a>
                 <a href="kontakt.html">Kontakt</a>
             </div>    
+        
         </div>
+        
     </nav>
          
     <header>
         <div class="picture">
-        <img class="main-picture" src="img/banner.JPG" alt="Banner s názvem závodu">
+        <img class="main-picture" src="img/DSC07094.JPG" alt="Banner s názvem závodu">
         </div>
     </header>
     
