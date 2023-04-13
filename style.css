@@ -181,6 +181,7 @@ h2 {
 
 .active {
     font-weight: 700;
+    font-style: italic;
 }
 
 .disabled {
@@ -283,3 +284,180 @@ h3 {
 .bold{
     font-weight: bold;
     }
+
+    /* responzivní design pro šířky obrazovek menší než 600px */
+@media screen and (max-width: 600px) {
+    /* změna vlastnosti pro navigaci */
+   
+    .logo {
+       padding: 10px 0px 10px 0px;
+        
+      }
+
+    nav {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .about {
+       padding-top: 10px;
+     
+     }
+    
+    .popis {
+        text-align: justify;
+        font-size: 15px;
+        margin: 0px 10px 0px 10px;
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        
+        font-size: 20px;
+        margin: 0px 10px 0px 10px;
+       
+    }
+
+    .termin {
+        font-size: 25px;
+        padding: 30px 0px 0px 0px;
+        letter-spacing: 3px;
+      }
+     
+      .termin-reg {
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+    /* změna vlastnosti pro top-container */
+    .top-container {
+      flex-direction: column;
+      align-items: center;
+    }
+     
+    .top-menu {
+        margin-left: 30px;
+        margin-right: 30px;
+        line-height: 30px;
+        
+        
+    }
+    
+    /* skrytí některých položek menu */
+    .top-menu a {
+      margin: 0px 10px 0px 10px;
+      padding: 0px;
+      
+    }
+
+    /* skrytí některých položek menu */
+    .top-menu a:nth-child(6),
+    .top-menu a.disabled {
+      display: none;
+    }
+    
+    .odkazy {
+       
+        margin-top: 10px;
+        padding: 10px;
+        
+        
+     }
+
+     .f2 img {
+        height: 50px;
+     }
+    
+    .icons {
+        width: 50px;
+        padding-right: 20px;
+     }
+
+     .mapa {
+        width: 90%;
+        
+     }
+     .kategorie {
+        display: block;
+    }
+     
+    .propozice {
+        text-align: justify;
+        font-size: 15px;
+        line-height: 30px;  
+    }
+
+    table.brd {
+      font-size: 15px;
+             }
+
+    table {
+     font-size: 15px;
+             }
+             
+    h3 {
+                font-size: 20px;
+                margin-top: 10px;
+            }
+    
+    .text {
+                font-size: 15px;
+                
+                
+            }
+
+}
+  
+  /* responzivní design pro šířky obrazovek mezi 600px a 900px */
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    /* změna výšky a odsazení headeru */
+    header {
+      height: 200px;
+      margin-top: 30px;
+    }
+    
+    /* změna výšky a odsazení hlavního obrázku */
+    .picture {
+      height: 120px;
+      margin-top: 10px;
+    }
+  }
+  
+  /* responzivní design pro šířky obrazovek větší než 900px */
+  @media screen and (min-width: 901px) {
+    /* vrácení vlastností pro navigaci */
+    nav {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    /* vrácení vlastností pro top-container */
+    .top-container {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    
+    /* zobrazení skrytých položek menu */
+    .top-menu a:nth-child(6),
+    .top-menu a.disabled {
+      display: inline-block;
+    }
+    
+    /* vrácení původní výšky a odsazení headeru */
+    header {
+      height: 300px;
+      margin-top: 80px;
+    }
+    
+    /* vrácení původní výšky a odsazení hlavního obrázku */
+    .picture {
+      height: 200px;
+      margin-top: 40px;
+    }
+}
