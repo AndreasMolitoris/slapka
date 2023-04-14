@@ -14,10 +14,6 @@ a {
     text-decoration: none;
 }
 
-a:visited 
-{
-    color: inherit;
-}
 
 nav {
     background-color: #402C28;
@@ -51,7 +47,6 @@ footer {
 .top-menu {
     margin:auto;
     font-size: 20px;
-    
     align-items: center;
     
     
@@ -84,11 +79,36 @@ a :hover {
     margin:auto;
     padding-top: 30px;
     text-align: center;
-    
-    
- 
  
  }
+
+ .vysledky {
+  max-width: 700px;
+  margin:auto;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  
+
+}
+
+.vysledky a {
+  margin-right: 10px;
+  text-decoration: unset;
+  
+}
+
+.vysledky span {
+  margin-right: 10px;
+  font-weight: 700;
+  line-height: 30px;
+  
+  
+}
+
+
 
 .termin {
     font-size: 40px;
@@ -188,6 +208,11 @@ h2 {
     color: gray !important
 }
 
+table.stred {
+  text-align: center;
+   
+}
+
 table.brd {
     border-collapse: collapse;
     max-width: fit-content;
@@ -216,16 +241,21 @@ table {
   }
   
 th, td {
-    text-align: left;
+    
     padding: 10px;
     
   }
-
   
 th {
     background-color: #402C28;
     color: #fff;
        
+  }
+
+  table.stred {
+    text-align: center;
+    font-size: 18px;
+     
   }
   
 tr:nth-child(even) {
@@ -369,6 +399,10 @@ h3 {
         
      }
 
+     .vysledky {
+    display: block;
+    }
+
      .f2 img {
         height: 50px;
      }
@@ -398,6 +432,7 @@ h3 {
 
     table {
      font-size: 15px;
+     
              }
              
     h3 {
@@ -412,6 +447,8 @@ h3 {
             }
 
 }
+
+
   
   /* responzivní design pro šířky obrazovek mezi 600px a 900px */
   @media screen and (min-width: 601px) and (max-width: 900px) {
