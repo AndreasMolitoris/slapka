@@ -16,32 +16,19 @@
     </style>
   </head>
   <body>
-    <div id="app">
-      <carousel :perPageCustom="{ 480: 2, 768: 3, 1200: 4 }">
-        <slide v-for="(image, index) in images" :key="index">
-          <img :src="'/fotky/' + image" alt="Image">
-        </slide>
-      </carousel>
-    </div>
-    <script src="./vue.js"></script>
-    <script src="https://unpkg.com/vue-carousel@0.18.0"></script>
-    <script>
-      var app = new Vue({
-        el: '#app',
-        data: {
-          images: [],
-          path: './fotky/'
-        },
-        mounted() {
-          this.getImages();
-        },
-        methods: {
-          getImages() {
-            const images = require.context(this.path, false, /\.(png|jpe?g|svg)$/);
-            this.images = images.keys().map(key => images(key));
-          }
-        }
-      });
-    </script>
+    
+   
+ 
+    
+    <a href="https://mapy.cz/s/jomuvejehu">https://mapy.cz/s/jomuvejehu</a>
+    
+    <br>
+    <br>
+    <br>
+    <iframe style="border:none" src="https://frame.mapy.cz/s/hodolalono" width="400" height="280" frameborder="0"></iframe> 
+ 
+
+    
+    
   </body>
 </html>
