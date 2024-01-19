@@ -1,0 +1,38 @@
+.brown {
+    background-color: #402C28 !important;
+}
+
+.active {
+    font-weight: bold;
+}
+
+main {
+    background-color: #96A61B;
+    min-height: 55vh;
+}
+
+.active {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #294013;
+}
+
+footer img {
+    width: 50%;
+    height: auto;
+   
+}
+
+main.p {
+    margin: 0;
+    line-height: 2.5em;
+}
+
+tr, td, th {
+    background-color: transparent !important;
+    }
+
+
+
