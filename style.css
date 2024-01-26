@@ -1,5 +1,9 @@
+body {
+    background-color:#dfd1ae;
+}
+
 .brown {
-    background-color: #402C28 !important;
+    background-color: #29221a !important;
 }
 
 .active {
@@ -7,7 +11,7 @@
 }
 
 main {
-    background-color: #96A61B;
+   
     min-height: 55vh;
 }
 
@@ -16,7 +20,7 @@ main {
 }
 
 footer {
-    background-color: #294013;
+    background-color: #84755d;
 }
 
 footer img {
@@ -33,6 +37,10 @@ main.p {
 tr, td, th {
     background-color: transparent !important;
     }
+
+td {
+        text-align: center;
+        }
 
 
 
