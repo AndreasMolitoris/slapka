@@ -10,6 +10,11 @@ body {
     font-weight: bold;
 }
 
+.hlavnilogo {
+    width: 5rem;
+    height: auto;
+}
+
 main {
    
     min-height: 55vh;
@@ -43,4 +48,24 @@ td {
         }
 
 
+@media screen and (max-width: 768px) {
+    .hlavnilogo {
+        width: 2rem;
+        height: auto;
+    }
+    
+        
+        
+        }
 
+
+        @media screen and (max-width: 991px) {
+            .hlavnilogo {
+                width: 3rem;
+                height: auto;
+            }
+            
+                
+                
+                }
+        

@@ -1,175 +1,304 @@
 <!DOCTYPE html>
 <html lang="cs">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-        <title>Chotucká šlapka</title>
-        <meta name="title" content="Chotucká šlapka">
-        <meta name="description" content="Trailový běžecký závod kousek od Nymburka">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://sokolkrinec.cz/slapka">
-        <meta property="og:title" content="Chotucká šlapka">
-        <meta property="og:description" content="Trailový běžecký závod kousek od Nymburka">
-        <meta name="og:image" content="http://www.sokolkrinec.cz/pbl/img/PBL_og.png">
-        <meta name="author" content="Andreas Molitoris">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css?version=1.1">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-      
-      
-        <!-- JS knihovny -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-          crossorigin="anonymous"></script>
-        <script src="https://www.cookie-lista.cz/BeeCookie/jquery-3.3.1.min.js"></script>
-        <script src="https://kit.fontawesome.com/46bb81a1b2.js" crossorigin="anonymous"></script>
-      
-        <!-- JS knihovny KONEC -->
-      </head>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chotucká šlapka</title>
+  <meta name="title" content="Chotucká šlapka">
+  <meta name="description" content="Trailový běžecký závod kousek od Nymburka">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sokolkrinec.cz/slapka">
+  <meta property="og:title" content="Chotucká šlapka">
+  <meta property="og:description" content="Trailový běžecký závod kousek od Nymburka">
+  <meta name="og:image" content="http://www.sokolkrinec.cz/pbl/img/PBL_og.png">
+  <meta name="author" content="Andreas Molitoris">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css?version=1.1">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+
+
+  <!-- JS knihovny -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://www.cookie-lista.cz/BeeCookie/jquery-3.3.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/46bb81a1b2.js" crossorigin="anonymous"></script>
+
+  <!-- JS knihovny KONEC -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M293HRT0XS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-M293HRT0XS');
+  </script>
+</head>
+
 <body>
-    
-    <nav class="navbar navbar-expand-md navbar-dark brown">
-        <div class="container ">
-          <a class="navbar-brand" href="https://www.sokolkrinec.cz/slapka">
-            <img class="img-fluid" src="img/logo_slapka.png" alt="Logo Chotucké šlapky">
-        </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item me-4">
-                <a class="nav-link text-white" href="/index.html">O běhu</a>
-              </li>
-              <li class="nav-item me-4">
-                <a class="nav-link text-white" href="/propozice.html">Propozice</a>
-              </li>
-              <li class="nav-item me-4">
-                <a class="nav-link text-white active" aria-current="page" href="/registrace.html">Registrace</a>
-              </li>
-              <li class="nav-item me-4">
-                <a class="nav-link text-white" href="/vysledky.html">Výsledky</a>
-              </li>
-         
-            </ul>
-          </div>
-        </div>
-      </nav>
 
-    <div class="hlavicka">
-        <img src="img/header_3.jpg" class="img-fluid" alt="pohled z prostřední cesty na Křinec">
+  <nav class="navbar navbar-expand-md navbar-dark brown">
+    <div class="container ">
+      <a class="navbar-brand" href="https://www.sokolkrinec.cz/slapka">
+        <img class="hlavnilogo" src="img/logo_slapka.png" alt="Logo Chotucké šlapky">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item me-4">
+            <a class="nav-link text-white" href="/slapka/index.html">O běhu</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link text-white" href="/slapka/propozice.html">Propozice</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link text-white active" aria-current="page" href="/slapka/registrace.html">Registrace</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link text-white" href="/slapka/vysledky.html">Výsledky</a>
+          </li>
+
+        </ul>
+      </div>
     </div>
-    
-    <main>
-        <div class="container text-center">
-          <p class="lead pt-5">Registrace na 11. ročník Chotucké šlapky probíhají on-line na portále nazavody.cz<br></p>
-          <p class="lead mb-3">Registrujte se v předstihu a využijte zvýhodněné startovné. Na místě před startem bude pouze <strong>omezený počet volných čísel</strong>.</p>
-          <a href="https://www.nazavody.cz/zavod/469-chotucka-slapka-11-rocnik/" target="_blank" class="btn btn-lg btn-danger fw-bold text-center my-3">Registrace ZDE</a>
-        </div>
-        <div class="container mt-3 table-responsive">
-          <table class="table w-auto mx-auto ">
-            <thead class="text-center">
-              <tr>
-                <th scope="col" colspan="2">Cena startovného</th>
-              </tr>
-            </thead>
-            <tbody class="table-group-divider">
-              <tr>
-                <th scope="row">do 31.03.2024</th>
-                <td>200 Kč</td>
-              </tr>
-              <tr>
-                <th scope="row">do 30.04.2024</th>
-                <td>300 Kč</td>
-              </tr>
-              <tr>
-                <th scope="row">do 12.05.2024</th>
-                <td>350 Kč</td>
-              </tr>
-              <tr>
-                <th scope="row">Na místě</th>
-                <td>400 Kč</td>
-              </tr>
-              <tr>
-                <th scope="row">Dětské běhy</th>
-                <td>dobrovolné</td>
-              </tr>
-              <tr>
-                <th scope="row">Funkční triko</th>
-                <td>400 Kč</td>
-              </tr>
-              </tbody>
-          </table>
-          
-        </div>
-        
-        <div class="container text-center">
-          <p class="lead pt-5">Od ročníku 2023 je možné si v rámci startovného zakoupit funkční tričko Chotucké šlapky s oboustranným potiskem (<em>Adler Malfini Fantasy</em>). Pro letošní rok byla zvolena barva Royal Blue.</p>
+  </nav>
 
-            <a href="img/triko.png" target="_blank"><img src="img/triko.png" alt="" class="img-fluid my-3 w-50"></a>
+  <div class="hlavicka">
+    <img src="img/header_3.jpg" class="img-fluid" alt="pohled z prostřední cesty na Křinec">
+  </div>
+
+  <main>
+    <div class="container text-center">
+      <p class="lead pt-5">Registrace na 11. ročník Chotucké šlapky probíhají on-line na portále nazavody.cz<br></p>
+      <p class="lead mb-3">Registrujte se v předstihu a využijte zvýhodněné startovné. Na místě před startem bude pouze
+        <strong>omezený počet volných čísel</strong>.
+      </p>
+      <a href="https://www.nazavody.cz/zavod/469-chotucka-slapka-11-rocnik/" target="_blank"
+        class="btn btn-lg btn-danger fw-bold text-center my-3">Registrace ZDE</a>
+    </div>
+    <div class="container mt-3 table-responsive">
+      <table class="table w-auto mx-auto ">
+        <thead class="text-center">
+          <tr>
+            <th scope="col" colspan="2">Cena startovného</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="row">do 31.03.2024</th>
+            <td>200 Kč</td>
+          </tr>
+          <tr>
+            <th scope="row">do 30.04.2024</th>
+            <td>300 Kč</td>
+          </tr>
+          <tr>
+            <th scope="row">do 12.05.2024</th>
+            <td>350 Kč</td>
+          </tr>
+          <tr>
+            <th scope="row">Na místě</th>
+            <td>400 Kč</td>
+          </tr>
+          <tr>
+            <th scope="row">Dětské běhy</th>
+            <td>dobrovolné</td>
+          </tr>
+          <tr>
+            <th scope="row">Funkční triko</th>
+            <td>400 Kč</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="container text-center">
+      <p class="lead pt-5">Od ročníku 2023 je možné si v rámci registrace zakoupit funkční tričko Chotucké šlapky s
+        oboustranným potiskem (<em>Adler Malfini Fantasy</em>). Pro letošní rok byla zvolena barva Royal Blue.</p>
+
+      <a href="img/triko.png" target="_blank"><img src="img/triko.png" alt="" class="img-fluid my-3 w-50"></a>
+    </div>
+  </main>
+
+
+
+  <footer>
+    <div class="navbar ">
+      <div class="container">
+        <div>
+          <a class="navbar-brand" href="http://www.krinec.cz" target="_blank">
+            <img src="img/znakkrinec.png" class="img-fluid" alt="znak městyse Křinec">
+          </a>
         </div>
-      </main>
+        <nav class="navbar menu_zavody navbar-expand-lg py-0">
+          <div class="container-fluid ">
 
-   
 
-      <footer>
-        <div class="navbar ">
-          <div class="container">
-            <div>
-              <a class="navbar-brand" href="http://www.krinec.cz" target="_blank">
-                <img src="img/znakkrinec.png" class="img-fluid" alt="znak městyse Křinec">
-              </a>
-            </div>
-            <nav class="navbar menu_zavody navbar-expand-lg py-0">
-              <div class="container-fluid ">
-          
-            
-                <div class="collapse navbar-collapse" id="navbarBot">
-                  <ul class="navbar-nav mx-auto">
-                    <li class="nav-item me-lg-4">
-                      <a class="nav-link text-white-50" aria-current="page" href="https://www.sokolkrinec.cz/knb">KNB</a>
-                    </li>
-                    <li class="nav-item me-lg-4">
-                      <p class="nav-link text-white-50" >|</p>
-                    </li>
-                    <li class="nav-item me-lg-4">
-                      <a class="nav-link text-white-50 active" href="https://www.sokolkrinec.cz/slapka">Chotucká šlapka</a>
-                    </li>
-                    <li class="nav-item me-lg-4">
-                      <p class="nav-link text-white-50">|</p>
-                    </li>
-                    <li class="nav-item me-lg-4">
-                      <a class="nav-link text-white-50" href="https://www.sokolkrinec.cz/bludistak">Křinecký cyklobludišťák</a>
-                    </li>
-                    <li class="nav-item me-lg-4">
-                      <p class="nav-link text-white-50">|</p>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white-50" href="https://www.sokolkrinec.cz/pbl">PBL</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-            <div>
-              <a class="navbar-brand" href="https://www.facebook.com/chotuckaslapka" target="_blank">
-                <i class="fa-brands fa-facebook-f fa-2xl me-3" style="color: #ffffff;"></i>
-              </a>
-              <a class="navbar-brand" href="mailto:andreas.molitoris@gmail.com" target="_blank">
-                <i class="fa-regular fa-envelope fa-2xl" style="color: #ffffff;"></i>
-              </a>
+            <div class="collapse navbar-collapse" id="navbarBot">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item me-lg-4">
+                  <a class="nav-link text-white-50" aria-current="page" href="https://www.sokolkrinec.cz/knb">KNB</a>
+                </li>
+                <li class="nav-item me-lg-4">
+                  <p class="nav-link text-white-50">|</p>
+                </li>
+                <li class="nav-item me-lg-4">
+                  <a class="nav-link text-white-50 active" href="https://www.sokolkrinec.cz/slapka">Chotucká šlapka</a>
+                </li>
+                <li class="nav-item me-lg-4">
+                  <p class="nav-link text-white-50">|</p>
+                </li>
+                <li class="nav-item me-lg-4">
+                  <a class="nav-link text-white-50" href="https://www.sokolkrinec.cz/bludistak">Křinecký
+                    cyklobludišťák</a>
+                </li>
+                <li class="nav-item me-lg-4">
+                  <p class="nav-link text-white-50">|</p>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white-50" href="https://www.sokolkrinec.cz/pbl">PBL</a>
+                </li>
+              </ul>
             </div>
           </div>
+        </nav>
+        <div>
+          <a class="navbar-brand" href="https://www.facebook.com/chotuckaslapka" target="_blank">
+            <i class="fa-brands fa-facebook-f fa-2xl me-3" style="color: #ffffff;"></i>
+          </a>
+          <a class="navbar-brand" href="mailto:andreas.molitoris@gmail.com" target="_blank">
+            <i class="fa-regular fa-envelope fa-2xl" style="color: #ffffff;"></i>
+          </a>
         </div>
-      </footer>
-  
+      </div>
+    </div>
+  </footer>
 
 
 
 
 
+  <!-- COOKIE LIŠTA v2.0 START -->
+  <script type="text/javascript" src="https://www.cookie-lista.cz/jquery.ihavecookies.js"></script>
+  <script type="text/javascript">
+    var options = {
+      box_umisteni: "right:0;bottom:0;",
+      box_sirka: "300px ",
+      box_odsazeni: "10px ",
+      box_odsazeni_obsah: "10px ",
+      box_lhz: "10px ",
+      box_phz: "10px ",
+      box_psz: "10px ",
+      box_lsz: "10px ",
+      box_stin_hor: "0px ",
+      box_stin_ver: "1px ",
+      box_stin_roz: "13px ",
+      box_stin_barva: "rgba(0,0,0,1)",
+      pozadi_obrazek: "",
+      pozadi_pruhlednost: "0",
+      pozadi_umisteni: "center",
+      pozadi_velikost: "cover",
+      pozadi_opakovani: "no-repeat",
+      pozadi_barva: "rgba(255,255,255,1)",
+      zavrit_text: "X",
+      zavrit_color: "rgb(0,0,0)",
+      zavrit_size: "10px ",
+      zavrit_pozadi: "rgba(237,237,237,1)",
+      zavrit_padding: "12px ",
+      zavrit_zaobleni: "6px ",
+      zavrit_marginleft: "280px ",
+      zavrit_marginright: "0px ",
+      zavrit_margintop: "-37px ",
+      zavrit_marginbottom: "0px ",
+      title: "🍪 Používáme Cookies",
+      title_color: "rgb(0,0,0)",
+      title_size: "20px ",
+      popis: "Naše webové stránky používají soubory cookie. Soubory cookie jsou textové soubory, které jsou ukládány ve webovém prohlížeči nebo webovým prohlížečem v počítačovém systému uživatele. Pokud uživatel vyvolá webovou stránku, může být soubor cookie uložen v operačním systému uživatele. Tento soubor cookie obsahuje charakteristický řetězec, který umožňuje jednoznačnou identifikaci prohlížeče při opětovném vyvolání webové stránky.",
+      popis_color: "rgb(0,0,0)",
+      popis_size: "10px ",
+      odkaz_text: "",
+      odkaz_url: "https://www.cookie-lista.cz/co-je-cookies.html",
+      odkaz_color: "rgb(255,0,0)",
+      odkaz_color_hover: "rgb(0,0,0)",
+      odkaz_size: "12px ",
+      session_nadpis: "Vyberte, které soubory cookie chcete přijmout",
+      session_nadpis_velikost: "12px ",
+      session_nadpis_barva: "rgb(156,227,255)",
+      session_text_barva: "rgb(255,255,255)",
+      session_pozadi_barva: "rgba(0,0,0,0.58)",
+      session_margin: "0px ",
+      session_padding: "10px ",
+      session_maxheight: "40vh ",
+      tlacitko_1_text: "Povolit cookies",
+      tlacitko_1_padding: "5px ",
+      tlacitko_1_margin: "0px ",
+      tlacitko_1_text_barva: "rgb(255,255,255)",
+      tlacitko_1_pozadi: "rgb(3,173,0)",
+      tlacitko_1_text_velikost: "15px ",
+      tlacitko_1_text_barva_hover: "rgb(0,0,0)",
+      tlacitko_1_pozadi_hover: "rgb(173,173,173)",
+      tlacitko_1_radius: "5px ",
+      tlacitko_2_text: "Vybrat cookies",
+      tlacitko_2_padding: "5px ",
+      tlacitko_2_margin: "15px ",
+      tlacitko_2_text_barva: "rgb(255,255,255)",
+      tlacitko_2_pozadi: "rgb(117,156,255)",
+      tlacitko_2_text_velikost: "15px ",
+      tlacitko_2_text_barva_hover: "rgb(0,0,0)",
+      tlacitko_2_pozadi_hover: "rgb(173,173,173)",
+      tlacitko_2_radius: "5px ",
+      odkaz_1_nazev: "",
+      odkaz_1_url: "",
+      odkaz_2_nazev: "",
+      odkaz_2_url: "",
+      odkaz_barva: "rgb(43,43,43)",
+      odkaz_barva_hover: "rgb(0,0,0)",
+      odkaz_mezera: "0px ",
+      odkaz_velikost: "0px ",
+      odkaz_target: "_blank",
+      expirace: "365",
+      zmena: "ano",
+      tvurce: "ano",
+      undefined: "",
+      delay: 0,
+      expires: "365",
+      uncheckBoxes: true
+    }
+
+    $(document).ready(function () {
+      $('body').ihavecookies(options);
+      ///////////////////////////////
+      /////// NĚCO NAVÍC START //////
+      ///////////////////////////////
+      if ($.fn.ihavecookies.preference('marketing') === true) {
+        //alert('Marketing je akceptován.');
+      }
+      if ($.fn.ihavecookies.preference('analytics') === true) {
+        //alert('Analytics je akceptován.');
+      }
+      if ($.fn.ihavecookies.preference('preferences') === true) {
+        //alert('Preferences je akceptován.');
+      }
+      ///////////////////////////////
+      /////// NĚCO NAVÍC KONEC //////
+      ///////////////////////////////
+      $('#ihavecookiesBtn').on('click', function () {
+        $('#malybox').remove();
+        $('body').ihavecookies(options, 'reinit');
+      });
+    });
+  </script>
+  <!-- COOKIE LIŠTA v2.0 KONEC -->
 
 </body>
+
 </html>
